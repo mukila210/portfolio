@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+</head>
+<body>
+    
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="name"><span class="fLetter">M</span>ukila.</div>
+            <ul id="sideMenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>   
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    <!--------------------------about-------------------------->
+    <div class="header-text">
+        <p>UI/UX Desinger</p>
+        <h1>Hi, I'm <span>Mukila</span><br>Murugan</h1>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="aboutCol-1">
+                <img src="imgs/user.png" class="picture" alt="">
+            </div>
+            <div class="aboutCol-2">
+                <h1 class="subTitle">About Me</h1>
+                <p>I'm a self-taught software developer with a strong passion for building
+                   and improving web applications. I've gained hands-on experience in front-end
+                   and back-end development using technologies like HTML, CSS, JavaScript, React,
+                   Node.js, Express.js, and SQL. I enjoy learning new tools, solving problems, 
+                   and turning ideas into functional, user-friendly products. My self-driven 
+                   journey reflects my adaptability, persistence, and love for coding. I'm eager
+                   to contribute to real-world projects and grow as a full stack developer.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018 - 2022</span><br>Syed Ammal Engineering Colloge</li>
+                        <li><span>2016 - 2018</span><br>Noble Matric Hr.Sec School</li>
+                        <!--<li><span>2016</span><br>Haris Varma Matric Hr.Sec School</li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------services---------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="subTitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-home"></i>
+                <h2>Web Design</h2>
+                <p>Crafting responsive, modern websites that combine aesthetics and 
+                   functionality to enhance user experience seamlessly.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <h2>UI/UX Design</h2>
+                <p>Creating visually appealing, user-centered interfaces that ensure
+                   smooth interactions and delightful digital experiences.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <h2>App Design</h2>
+                <p>Designing intuitive, engaging mobile app interfaces focused on 
+                   usability, performance, and user satisfaction.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------portfolio-------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subTitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="imgs/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>A clean, modern portfolio site showcasing skills, projects,
+                       and personal brand with smooth navigation.</p>
+                       <a href="#" id="port"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="imgs/work-6.png" alt="">
+                <div class="layer">
+                    <h3>E-commerce Website</h3>
+                    <p>A user-friendly eCommerce platform designed for seamless
+                       shopping, product discovery, and secure checkout.</p>
+                       <a href="#" id="ecom"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <!--<div class="work">
+                <img src="imgs/work-6.png" alt="">
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                       Error atque quam obcaecati totam et fugit.</p>
+                       <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>-->
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+<!-----------------------------------contact------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subTitle">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>7305241304</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <a href="imgs/New folder/my-cv.pdf"  download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyRight">
+        <p>Copyright © Mukila. Made With <i class="fas fa-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+
+
+<script src="./app.js"></Script>
+</body>
+</html>
